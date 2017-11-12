@@ -1,32 +1,33 @@
 import turtle
-turtle.register_shape("gilad",((0,0),(50,20),(50,50),(0,50),(20,50),(0,0)))
-turtle.getshapes()
-turtle.shape("gilad")
+turtle.addshape("star.gif")
+turtle.shape("star.gif")
 
-turtle.speed(1)
-turtle.pencolor("green")
+turtle.speed(1000000000000000000000000000000000)
+turtle.pensize(1)
+a = 0
+
+for i in range(360):
+	turtle.pendown()
+	turtle.right(90)
+	turtle.forward(200)
+	turtle.right(45)
+	turtle.forward(80)
+	turtle.right(45)
+	turtle.forward(40)
 	
-turtle.right(145)
-turtle.forward(100)
+	turtle.right(90)
+	turtle.forward(200)
+	turtle.right(45)
+	turtle.forward(80)
+	turtle.right(45)
+	turtle.forward(40)
 
-turtle.pencolor("yellow")
+	turtle.penup()
+	turtle.home()
+	a+=7
+	turtle.left(a)
 
-turtle.right(145)
-turtle.forward(100)
 
-turtle.pencolor("blue")
 
-turtle.right(145)
-turtle.forward(100)
+turtle.mainloop()
 
-turtle.pencolor("red")
-
-turtle.right(145)
-turtle.forward(100)
-
-turtle.pencolor("purple")
-
-turtle.right(145)
-turtle.forward(100)
-
-turtle.mainloop()	
