@@ -26,6 +26,7 @@ for i in range(360):
 	turtle.home()
 	a+=7
 	turtle.left(a)
+turtle.shapesize(1000)
 
 
 
