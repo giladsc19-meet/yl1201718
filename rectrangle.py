@@ -1,16 +1,13 @@
 from turtle import *
 import random
+import math
 
 class Rectangle(Turtle):
-	def __init__(self,width,height):
+	def __init__(self,dx,dy,width,height):
 		Turtle. __init__(self)
 		
-		register_shape("myshape", ((width,0), (width,height), (0,height), (0,0)))
-		self.shape("myshape")
-		self.setheading(90)
-
-a = Rectangle(100,50)
-mainloop()
-
-
-
+		self.goto(x,y)
+		self.dx=dx
+		self.dy=dy
+		self.width=width
+		self.height=height
