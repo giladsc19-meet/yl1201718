@@ -29,3 +29,14 @@ class Ball(Turtle):
 			self.dx = -self.dx
 		if bottom_side_ball<=-screen_height or up_side_ball>=screen_height:
 			self.dy = -self.dy
+
+
+class Food(Turtle):
+	def __init__(self,xpos,ypos,color):
+		Turtle.__init__(self)
+		self.pu()
+		self.goto(xpos,ypos)
+		self.shape("circle")
+		self.shapesize(10/10)
+		self.color(color)
+
